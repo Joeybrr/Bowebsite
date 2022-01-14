@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+<header>
+   <p>Home Info Visit</p>
+</header>
+<body>
+    <img src="img/99.png" alt="">
+    <article>
+        <h1>Het Rijksmuseum</h1>
+        <h1>Slideshow</h1>
+    <div class="button" onclick="onClickNext()">Volgende foto</div>
+    <div class="button" onclick="onClickPrevious()">Vorige foto</div>
+    <img id="img" src="https://media.mutualart.com/Images/2018_06/21/12/124341594/b10fc062-00ec-40e3-a791-5c7799fcb0b4_570.Jpeg" alt=" Rijksmuseum foto">
+
+    <script>
+        var position = 0;
+        var img1 = "https://onlinegallery.art/images/blog/2015-01-Zelfportret-als-de-apostel-Paulus.jpg"
+        var img2 = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/De_bedreigde_zwaan_Rijksmuseum_SK-A-4.jpeg/800px-De_bedreigde_zwaan_Rijksmuseum_SK-A-4.jpeg"
+        var img3 = "https://www.artsheaven.com/wp-content/uploads/2019/05/jean-baptiste-oudry-water-spaniel-surprising-a-swan-on-its-nest-1.jpg"
+        var img4 = "https://lh3.googleusercontent.com/yfH3HoYjUOOXNic6f9V3KSgtFGQYxU3lyqsi08F7P8GVHW12saX8oW_sApbSTgTBv-ctXUqCLM82FgHzUamP9Z-ozhCJZKZkb2U3F13z=w400"
+        var img5 = "https://uploads8.wikiart.org/images/jan-steen/twelfth-night-1668.jpg!Large.jpg"
+        var img6 = "https://uploads3.wikiart.org/images/jan-steen/twelfth-night.jpg!Large.jpg"
+        var img7 = "http://2.bp.blogspot.com/-0pNaSoSzVPg/TqKrSeNABFI/AAAAAAAAAeA/7ZlLzlL3caI/s1600/Helst+-+Portrait+of+Gerard+Bicker.jpg"
+        var img8 = "https://media.mutualart.com/Images/2014_12/03/22/221229285/a359f6cc-3d4b-4fb8-a603-ea00994d5a0c_570.Jpeg"
+        var imgElement = document.getElementById("img");
+        function onClickNext(){
+            
+           position = position + 1;
+            if(position == 7){
+                position = 0;
+            }
+           setImage();
+        }
+        function onClickPrevious(){
+            
+           position = position - 1;
+            if(position == -1){
+                position = 6;
+            }
+            setImage();
+        }
+
+        function setImage(){
+            if(position == 0){
+                imgElement.src = img1
+            }
+            else if(position == 1){
+                imgElement.src = img2
+            }
+            else if(position == 2){
+                imgElement.src = img3
+            }
+            else if(position == 3){
+                imgElement.src = img4
+            }
+            else if(position == 4){
+                imgElement.src = img5
+            }
+            else if(position == 5){
+                imgElement.src = img6
+            }
+            else if(position == 6){
+                imgElement.src = img7
+            }
+            else if(position == 7){
+                imgElement.src = img8
+            }
+        }
+    </script>
+        <p>
+    
+            <div class="button" onclick="onClickNext()">Volgende foto</div>
+    </article>
+    
+</body>
+<footer>
+    <p>Gemaakt door Davy Faber, Matthijs Juriaans en Joey Piebenga </p>
+    <p>Rijksmuseum Amsterdam</p>
+    <p>Postbus 74888</p>
+    <p>1070 DN Amsterdam</p>
+    <p>E-mail: info@rijksmuseum.nl</p>
+    <p>Telefoonnummer: +31 (0) 20 6747 000</p>
+</footer>
+</html>
+
