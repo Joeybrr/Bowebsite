@@ -8,13 +8,10 @@
 header{
     height: 60px;
     width:100%;
-    background: #BFBFC0;
+    background: #3E6C80;
     color: #BFBFC0;
 }
 
-header > a {
-    color: black;
-}
 nav{
     width: 60vw;
     height:100%;
@@ -49,9 +46,6 @@ nav > ul > li > a:visited, nav > ul > li > a:link{
     color: white;
     text-decoration: none;
 }
-nav > ul > .active{
-    
-}
 
 body{
     font-size: 20px;
@@ -74,9 +68,11 @@ h1{
 }
 
 article{
+    border-top: 3px solid black;
     width: 60vw;
-    margin: 0 auto;
+    margin: 10px auto auto auto;
     padding: 40px;
+    align-items: center;
 }
 
 figure{
@@ -110,6 +106,31 @@ video{
     border-radius: 5px;
 }
 
+#container {
+    box-sizing: border-box;
+    border-top: 3px solid black;
+    border-bottom: 1px solid black;
+    background-color:rgb(153, 189, 255);
+    width: 1200px;
+    height: 600px;
+    margin-right: 500px;
+    display: grid;
+    grid-template-columns: auto auto;
+    border: inset 2px gray;
+    margin-left:-70px;
+}
+
+#MyInteraction {
+    padding: 10px;
+    margin-left: 1px;
+}
+
+#map {
+    margin-top: 30px;
+    width: 70%;
+    height: auto;
+}
+
 
 footer{
     display:flex;
@@ -118,14 +139,15 @@ footer{
     align-items:center;
     justify-content:space-between;
     padding: 30px;
-    background-color: #BFBFC0;
+    background-color: #3E6C80;
 }
 
 footer > p{
     margin: 0px;
     margin-right:15px;
     padding: 0px;
-    font-size: 75%;
+    font-size: 80%;
+    font-family: serif;
 }
 
 @media screen and (max-width:1000px) {

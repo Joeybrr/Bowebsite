@@ -22,6 +22,23 @@
     </header>
     <img src="img/frontpage.png" alt="foto van het rijksmuseum met de naam van het rijksmuseum erop">
     <article>
+    <div id="container">
+        <img id="MyImage" src="img/spot0.png" height="600px" alt="ingang van de route.">
+
+        <div id="MyInteraction">
+            <div id="MyTitle">
+                (0 tot 12)
+            </div>
+            <input type="text" id="MyInput" autocomplete="off">
+            <input type="button" value="put in" onclick="GetInput()">
+            <div id=map>
+                <img class="map1" src="img/map.png"  width="250px">
+            </div>
+        </div>
+    </div>
+    </article>
+    
+    <article>
         <h1>Het Rijksmuseum</h1>
         <h1>Slideshow</h1>
     <div class="button" onclick="onClickNext()">Volgende foto</div>
@@ -83,9 +100,6 @@
             }
         }
     </script>
-        <p>
-    
-            <div class="button" onclick="onClickNext()">Volgende foto</div>
     </article>
     <footer>
         <p>Gemaakt door Davy Faber, Matthijs Juriaans en Joey Piebenga </p>
@@ -95,6 +109,7 @@
         <p>E-mail: info@rijksmuseum.nl</p>
         <p>Telefoonnummer: +31 (0) 20 6747 000</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
 
