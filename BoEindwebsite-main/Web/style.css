@@ -175,3 +175,7 @@ footer > p{
         padding-left:20px;
     }
 }
+
+.Geschiedenis, .GeschiedenisText{
+    padding: 50px;
+}
