@@ -239,14 +239,17 @@ footer > p{
     padding: 50px;
 }
 
+.reviews2{
+    margin-right: 100px;
+}
+
+
 .reviews, .reviews2{
-    padding: 75px;
-    display: flex;
+    padding: 20px;
+    margin-left: 150px;
     list-style: none;
 }
 
-.reviews, .reviewh, .sterren, .reviews2, .reviewh2, .sterren2{
-   margin-right: 400px;
-   margin-top: -50px;
-}
+
+
 
